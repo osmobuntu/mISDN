@@ -1,0 +1,5 @@
+misdn (20.0.32+git11) precise; urgency=low
+
+  * Initial package.
+
+ -- Eric Butler <eric@codebutler.com>  Wed, 15 Aug 2012 18:35:51 -0700

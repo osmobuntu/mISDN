@@ -16,6 +16,8 @@ config.log
 config.h
 config.status
 stamp-h1
+install-sh
+missing
 /Makefile
 /Makefile.in
 standalone/Makefile
@@ -29,3 +31,12 @@ standalone/misdn.sed
 standalone/mISDN.cfg.D
 standalone/mISDN.cfg.M
 standalone/misdn.configs
+debian/misdn-dkms
+debian/misdn-dkms.install
+debian/autoreconf.after
+debian/autoreconf.before
+debian/files
+debian/*.debhelper.log
+debian/*.substvars
+debian/*.dkms
+debian/*.debhelper

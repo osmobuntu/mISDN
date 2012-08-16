@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+DEB_VERSION := $(shell dpkg-parsechangelog | grep '^Version:' | cut -d' ' -f2 | cut -d\: -f2)
+
+%:
+	dh $@ --with autoreconf,dkms
+
+override_dh_auto_build:
+	sed -e "s|#DEB_VERSION#|$(DEB_VERSION)|" debian/misdn-dkms.dkms.in > debian/misdn-dkms.dkms
+	sed -e "s|#DEB_VERSION#|$(DEB_VERSION)|" debian/misdn-dkms.install.in > debian/misdn-dkms.install
+	cp mISDN.cfg.default standalone/mISDN.cfg
+	$(MAKE) patched_tree misdn.sed check_mISDN_cfg
+
+override_dh_auto_test:
+	# No tests to run.
+
+override_dh_auto_install:
+	# Nothing to install.

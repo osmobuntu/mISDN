@@ -1,0 +1,18 @@
+Source: misdn
+Section: comm
+Priority: optional
+Build-Dependencies: autoreconf, dkms
+Maintainer: Eric Butler <eric@codebutler.com>
+Homepage: http://misdn.org/
+Vcs-Git: https://github.com/osmobuntu/mISDN.git
+Vcs-Browser: https://github.com/osmobuntu/mISDN
+
+Package: misdn-dkms
+Section: devel
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: misdn-user
+Description:
+ A Linux in-kernel ISDN stack.  
+ .
+ The dkms package will automatically compile the mISDN modules.
