@@ -8,13 +8,16 @@ modules.order
 .tmp_versions
 *~
 ChangeLog
+aclocal.m4
 autom4te.cache
 INSTALL
+configure
 config.log
 config.h
 config.status
 stamp-h1
 /Makefile
+/Makefile.in
 standalone/Makefile
 standalone/drivers
 standalone/include
