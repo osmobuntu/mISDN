@@ -34,7 +34,11 @@ if test -z "$KERNEL_BUILD_DIR"; then
 	fi
 	KERNEL_MOD_DIR=/lib/modules/$KERNEL_VERSION
 	KERNEL_BUILD_DIR=$KERNEL_MOD_DIR/build
-	KERNEL_SOURCE_DIR=$KERNEL_MOD_DIR/source
+	if test -d $KERNEL_BUILD_DIR/source; then
+		KERNEL_SOURCE_DIR=$KERNEL_MOD_DIR/source
+	else
+		KERNEL_SOURCE_DIR=$KERNEL_MOD_DIR/build
+	fi
 else
 	if test -d $KERNEL_BUILD_DIR/source; then
 		KERNEL_SOURCE_DIR=$KERNEL_BUILD_DIR/source
