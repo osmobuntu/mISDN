@@ -1,3 +1,9 @@
+misdn (20.0.32+git11-1) precise; urgency=low
+
+  * Run autofoo from DKMS.
+
+ -- Eric Butler <eric@codebutler.com>  Fri, 17 Aug 2012 18:35:58 -0700
+
 misdn (20.0.32+git11) precise; urgency=low
 
   * Initial package.

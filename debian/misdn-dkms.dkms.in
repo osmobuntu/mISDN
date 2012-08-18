@@ -3,7 +3,7 @@ PACKAGE_VERSION="#DEB_VERSION#"
 PACKAGE_NAME="misdn"
 CLEAN="make clean"
 
-MAKE[0]="make -C standalone modules_ LINUX=/lib/modules/`uname -r`/build"
+MAKE[0]="autoreconf -i && ./configure && make modules"
 
 BUILT_MODULE_NAME[0]="avmfritz"
 BUILT_MODULE_LOCATION[0]="standalone/drivers/isdn/hardware/mISDN"
