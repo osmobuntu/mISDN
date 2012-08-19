@@ -1,3 +1,9 @@
+misdn (20.0.32+git11-2) precise; urgency=low
+
+  * Add init script to autoload modules.
+
+ -- Eric Butler <eric@codebutler.com>  Sun, 19 Aug 2012 16:36:22 -0700
+
 misdn (20.0.32+git11-1) precise; urgency=low
 
   * Run autofoo from DKMS.

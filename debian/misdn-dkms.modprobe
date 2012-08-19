@@ -1,0 +1,1 @@
+options mISDN_l1loop pri=1 nchannel=30
