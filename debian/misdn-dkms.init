@@ -12,7 +12,7 @@
 . /lib/lsb/init-functions
 
 NAME="misdn-modules"
-MODULES="mISDN_l1loop"
+MODULES="mISDN_l1loop mISDN_dsp"
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 
 # Read configuration variable file if it is present
